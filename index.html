@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#050807">
+    <meta name="description" content="NeoGauge raccoglie chilometri, rifornimenti, costi, statistiche e ricordi della tua moto, in un unico spazio per iPhone e iPad.">
+    <meta property="og:title" content="NeoGauge — La tua moto, raccontata dai suoi numeri">
+    <meta property="og:description" content="Dati, statistiche e diario della tua moto. Senza mappe, senza navigazione, senza distrazioni.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:image" content="assets/app-icon.png">
+    <title>NeoGauge — La tua moto, raccontata dai suoi numeri</title>
+    <link rel="icon" href="assets/app-icon.png">
+    <link rel="apple-touch-icon" href="assets/app-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+    <header class="site-header">
+        <a class="brand" href="#inizio" aria-label="NeoGauge, torna all'inizio">
+            <img src="assets/neogauge-logo.png" alt="" width="44" height="44">
+            <span>NeoGauge</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">
+            <span class="sr-only">Apri il menu</span>
+            <span></span><span></span>
+        </button>
+
+        <nav id="main-navigation" class="main-navigation" aria-label="Navigazione principale">
+            <a href="#funzioni">Funzioni</a>
+            <a href="#differenza">Cos'è NeoGauge</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#domande">Domande</a>
+            <a href="#contatti">Contatti</a>
+        </nav>
+    </header>
+
+    <main id="contenuto">
+        <section id="inizio" class="hero section-shell">
+            <div class="hero-copy">
+                <p class="eyebrow">La memoria digitale della tua moto</p>
+                <h1>La tua moto,<br><span>raccontata dai suoi numeri.</span></h1>
+                <p class="hero-intro">NeoGauge riunisce chilometri, rifornimenti, costi, statistiche e ricordi in uno spazio personale, chiaro e costruito per iPhone e iPad.</p>
+
+                <div class="hero-actions">
+                    <a class="primary-button" href="#funzioni">Scopri NeoGauge</a>
+                    <span class="store-status" aria-label="Disponibilità prevista su App Store">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16.7 13.1c0-2.7 2.2-4 2.3-4.1a5 5 0 0 0-3.9-2.1c-1.6-.2-3.2 1-4 1-1 0-2.4-1-3.9-1a5.8 5.8 0 0 0-4.8 3c-2 3.5-.5 8.7 1.5 11.5 1 1.4 2.1 3 3.7 2.9 1.5-.1 2.1-1 3.9-1s2.3 1 3.9 1c1.6 0 2.6-1.4 3.5-2.9a12.7 12.7 0 0 0 1.6-3.3 4.9 4.9 0 0 1-3.8-5Zm-2.6-7.9A5 5 0 0 0 15.3 1a5.1 5.1 0 0 0-3.4 1.7 4.7 4.7 0 0 0-1.2 4 4.2 4.2 0 0 0 3.4-1.5Z"/></svg>
+                        <span><small>Prossimamente su</small>App Store</span>
+                    </span>
+                </div>
+
+                <div class="hero-points" aria-label="Caratteristiche principali">
+                    <span>Solo i tuoi dati</span>
+                    <span>Italiano e sistema metrico</span>
+                    <span>iPhone e iPad</span>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Anteprima grafica di NeoGauge">
+                <div class="ambient-glow"></div>
+                <div class="phone phone-back" aria-hidden="true">
+                    <div class="phone-screen stats-screen">
+                        <div class="mock-status"><span>9:41</span><span>● ●</span></div>
+                        <p class="mock-kicker">STATISTICHE</p>
+                        <h2>La tua stagione</h2>
+                        <div class="chart-bars">
+                            <i style="--bar: 42%"></i><i style="--bar: 64%"></i><i style="--bar: 51%"></i><i style="--bar: 82%"></i><i style="--bar: 70%"></i><i style="--bar: 94%"></i>
+                        </div>
+                        <div class="mock-row"><span>Consumo medio</span><strong>19,8 km/l</strong></div>
+                        <div class="mock-row"><span>Spesa carburante</span><strong>€ 486</strong></div>
+                    </div>
+                </div>
+
+                <div class="phone phone-front" aria-hidden="true">
+                    <div class="phone-screen garage-screen">
+                        <div class="mock-status"><span>9:41</span><span>● ●</span></div>
+                        <img class="mock-logo" src="assets/neogauge-logo.png" alt="">
+                        <p class="mock-kicker">LA TUA MOTO</p>
+                        <h2>Ogni dato.<br>Un solo sguardo.</h2>
+                        <div class="odometer">
+                            <small>CHILOMETRI TOTALI</small>
+                            <strong>24.680</strong><span> km</span>
+                        </div>
+                        <div class="quick-grid">
+                            <div><small>ULTIMO PIENO</small><strong>18,4 l</strong></div>
+                            <div><small>MEDIA</small><strong>19,8 km/l</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statement section-shell" aria-labelledby="statement-title">
+            <p class="eyebrow">Conosci la moto che guidi</p>
+            <h2 id="statement-title">Meno supposizioni.<br><span>Più consapevolezza.</span></h2>
+            <p>NeoGauge trasforma le informazioni che inserisci e i riepiloghi delle tue sessioni in una storia chiara della moto: quanto la usi, quanto consuma e quali ricordi vuoi conservare.</p>
+        </section>
+
+        <section id="funzioni" class="features section-shell" aria-labelledby="features-title">
+            <div class="section-heading">
+                <p class="eyebrow">Tutto ciò che conta</p>
+                <h2 id="features-title">I dati della moto,<br>finalmente leggibili.</h2>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card feature-card-wide reveal">
+                    <span class="feature-number">01</span>
+                    <div>
+                        <p class="feature-label">Rifornimenti</p>
+                        <h3>Ogni pieno diventa informazione.</h3>
+                        <p>Registra litri, prezzo e chilometri. NeoGauge organizza lo storico e rende immediati consumi e costi.</p>
+                    </div>
+                    <div class="fuel-visual" aria-hidden="true">
+                        <div><span>MEDIA</span><strong>19,8</strong><small>km/l</small></div>
+                        <svg viewBox="0 0 220 100"><path d="M2 83 C32 78 42 38 72 54 S116 88 142 43 S185 32 218 12"/></svg>
+                    </div>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span class="feature-number">02</span>
+                    <div class="feature-icon chart-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                    <p class="feature-label">Statistiche</p>
+                    <h3>Il quadro completo, anno dopo anno.</h3>
+                    <p>Confronta chilometri, carburante, spese e medie con schede e grafici costruiti sui tuoi dati.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span class="feature-number">03</span>
+                    <div class="feature-icon diary-icon" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="feature-label">Diario</p>
+                    <h3>I numeri ricordano. Tu aggiungi il resto.</h3>
+                    <p>Conserva riepiloghi, fotografie e note personali in un diario essenziale dei momenti che contano.</p>
+                </article>
+
+                <article class="feature-card feature-card-dark reveal">
+                    <span class="feature-number">04</span>
+                    <div class="feature-icon garage-icon" aria-hidden="true">NG</div>
+                    <p class="feature-label">Box</p>
+                    <h3>La tua moto ha il suo spazio.</h3>
+                    <p>Dati identificativi, chilometraggio e attività recenti restano raccolti in una vista ordinata e personale.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="differenza" class="difference section-shell" aria-labelledby="difference-title">
+            <div class="difference-copy reveal">
+                <p class="eyebrow">Una scelta precisa</p>
+                <h2 id="difference-title">Non ti indica la strada.<br><span>Ti racconta la moto.</span></h2>
+                <p>NeoGauge non è un navigatore e non nasce per pianificare itinerari. Non mostra la posizione su una mappa e non crea tracciati da condividere.</p>
+                <p>Può conservare i dati riepilogativi di una sessione — come chilometri, durata e velocità — insieme alle note e alle foto che scegli di aggiungere.</p>
+            </div>
+
+            <div class="difference-list reveal" aria-label="Confronto delle funzioni">
+                <div><span class="not-included">×</span><p><strong>Nessuna navigazione</strong><small>Niente indicazioni stradali o mappe.</small></p></div>
+                <div><span class="not-included">×</span><p><strong>Nessun itinerario</strong><small>Niente pianificazione o file GPX.</small></p></div>
+                <div><span class="included">✓</span><p><strong>Dati riepilogativi</strong><small>Numeri utili, senza ricostruire il tragitto.</small></p></div>
+                <div><span class="included">✓</span><p><strong>Diario personale</strong><small>Ricordi, fotografie e note scelti da te.</small></p></div>
+            </div>
+        </section>
+
+        <section id="privacy" class="privacy section-shell" aria-labelledby="privacy-title">
+            <div class="privacy-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="privacy-copy reveal">
+                <p class="eyebrow">I tuoi dati sono tuoi</p>
+                <h2 id="privacy-title">Personale per progetto.</h2>
+                <p>NeoGauge conserva i dati localmente e, quando disponibile, li sincronizza tramite il database privato iCloud associato al tuo account Apple.</p>
+                <a class="text-link" href="https://djconny.github.io/NeoGauge-Privacy/" target="_blank" rel="noopener noreferrer">Leggi l'informativa sulla privacy <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section id="domande" class="faq section-shell" aria-labelledby="faq-title">
+            <div class="section-heading">
+                <p class="eyebrow">In breve</p>
+                <h2 id="faq-title">Domande frequenti.</h2>
+            </div>
+
+            <div class="faq-list">
+                <details>
+                    <summary>NeoGauge è un navigatore?<span>+</span></summary>
+                    <p>No. NeoGauge non fornisce indicazioni stradali, non pianifica itinerari e non mostra tracciati su una mappa.</p>
+                </details>
+                <details>
+                    <summary>Quali dati conserva delle sessioni?<span>+</span></summary>
+                    <p>Soltanto riepiloghi utili come chilometri, durata e velocità media o massima. Puoi poi raccoglierli in un ricordo con nome, note e fotografie.</p>
+                </details>
+                <details>
+                    <summary>Posso usarla su iPhone e iPad?<span>+</span></summary>
+                    <p>Sì. NeoGauge condivide lo stesso modello di dati e offre un'interfaccia adattata ai due dispositivi.</p>
+                </details>
+                <details>
+                    <summary>Quando sarà disponibile?<span>+</span></summary>
+                    <p>NeoGauge è in fase di preparazione per la pubblicazione. Il collegamento ufficiale all'App Store sarà aggiunto qui appena disponibile.</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="contatti" class="contact section-shell reveal" aria-labelledby="contact-title">
+            <div>
+                <p class="eyebrow">Parliamo di NeoGauge</p>
+                <h2 id="contact-title">Domande, suggerimenti<br>o segnalazioni?</h2>
+                <p>Scrivimi direttamente. Ogni messaggio aiuta NeoGauge a crescere nella direzione giusta.</p>
+            </div>
+            <a class="email-card" href="mailto:kawasaki.z650rs.italia@gmail.com">
+                <span>EMAIL</span>
+                <strong>kawasaki.z650rs.italia@gmail.com</strong>
+                <i aria-hidden="true">↗</i>
+            </a>
+        </section>
+
+        <section class="final-cta section-shell" aria-labelledby="final-title">
+            <img src="assets/neogauge-logo.png" alt="" width="104" height="104">
+            <p class="eyebrow">NeoGauge per iPhone e iPad</p>
+            <h2 id="final-title">Ogni moto ha una storia.<br><span>Inizia dai suoi numeri.</span></h2>
+            <span class="store-status store-status-large">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16.7 13.1c0-2.7 2.2-4 2.3-4.1a5 5 0 0 0-3.9-2.1c-1.6-.2-3.2 1-4 1-1 0-2.4-1-3.9-1a5.8 5.8 0 0 0-4.8 3c-2 3.5-.5 8.7 1.5 11.5 1 1.4 2.1 3 3.7 2.9 1.5-.1 2.1-1 3.9-1s2.3 1 3.9 1c1.6 0 2.6-1.4 3.5-2.9a12.7 12.7 0 0 0 1.6-3.3 4.9 4.9 0 0 1-3.8-5Zm-2.6-7.9A5 5 0 0 0 15.3 1a5.1 5.1 0 0 0-3.4 1.7 4.7 4.7 0 0 0-1.2 4 4.2 4.2 0 0 0 3.4-1.5Z"/></svg>
+                <span><small>Prossimamente su</small>App Store</span>
+            </span>
+        </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+        <div class="brand footer-brand">
+            <img src="assets/neogauge-logo.png" alt="" width="36" height="36">
+            <span>NeoGauge</span>
+        </div>
+        <p>Progettata in Italia per chi ama conoscere la propria moto.</p>
+        <div class="footer-links">
+            <a href="https://djconny.github.io/NeoGauge-Privacy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a href="mailto:kawasaki.z650rs.italia@gmail.com">kawasaki.z650rs.italia@gmail.com</a>
+        </div>
+        <p class="copyright">© <span id="current-year">2026</span> NeoGauge</p>
+    </footer>
+</body>
+</html>
