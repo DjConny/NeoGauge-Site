@@ -13,7 +13,7 @@
     <title>NeoGauge — La strumentazione digitale che mancava alla tua moto</title>
     <link rel="icon" href="assets/app-icon.png?v=2">
     <link rel="apple-touch-icon" href="assets/app-icon.png?v=2">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=4">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -32,6 +32,7 @@
 
         <nav id="main-navigation" class="main-navigation" aria-label="Navigazione principale">
             <a href="#dashboard">Dashboard</a>
+            <a href="#dispositivi">iPhone e iPad</a>
             <a href="#funzioni">Funzioni</a>
             <a href="#differenza">Cos'è NeoGauge</a>
             <a href="#privacy">Privacy</a>
@@ -64,41 +65,8 @@
 
             <div class="hero-visual dashboard-hero-visual" aria-label="Anteprima della Dashboard NeoGauge">
                 <div class="ambient-glow"></div>
-                <div class="dashboard-device" aria-hidden="true">
-                    <div class="dashboard-device-screen">
-                        <div class="dashboard-topline">
-                            <div><i></i><strong>NEOGAUGE</strong><small>KAWASAKI Z650RS</small></div>
-                            <span>● IN REGISTRAZIONE</span>
-                            <time>14:28</time>
-                        </div>
-
-                        <div class="dashboard-data-grid">
-                            <div class="dashboard-side-column">
-                                <div class="dashboard-tile cyan"><small>TEMPERATURA ESTERNA</small><strong>19°</strong><span>PARZIALMENTE NUVOLOSO</span></div>
-                                <div class="dashboard-tile mint"><small>ALTITUDINE</small><strong>212 M</strong><span>DATI DA GPS</span></div>
-                                <div class="dashboard-small"><small>TRIP</small><strong>46,8 KM</strong></div>
-                            </div>
-
-                            <div class="dashboard-speed-column">
-                                <div class="dashboard-speed">
-                                    <small>VELOCITÀ GPS</small>
-                                    <strong>78</strong>
-                                    <span>KM/H</span>
-                                    <em>DATI LIVE</em>
-                                </div>
-                                <div class="dashboard-controls"><b>▶ PLAY</b><b>Ⅱ PAUSA</b><b>■ STOP</b></div>
-                                <div class="dashboard-bottom-row"><div><small>DURATA</small><strong>00:42:18</strong></div><div><small>MEDIA</small><strong>66 KM/H</strong></div></div>
-                            </div>
-
-                            <div class="dashboard-side-column">
-                                <div class="dashboard-tile green"><small>BATTERIA TEL.</small><strong>84%</strong><span>ALIMENTAZIONE INTERNA</span></div>
-                                <div class="dashboard-tile green"><small>GPS</small><strong>NE</strong><span>FIX GPS · ±4 M</span></div>
-                                <div class="dashboard-refuel">⛽ RIFORNIMENTO</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="dashboard-preview-caption">Anteprima fedele dell'interfaccia attuale. Le schermate reali dell'app saranno aggiunte prima del lancio.</p>
+                <img class="real-dashboard-hero" src="assets/iphone-dashboard.jpg" alt="Dashboard reale di NeoGauge su iPhone con velocità GPS, temperatura, altitudine e comandi della sessione">
+                <p class="dashboard-preview-caption">Schermata reale della Dashboard NeoGauge su iPhone.</p>
             </div>
         </section>
 
@@ -116,6 +84,36 @@
                 <div><span>02</span><p><strong>Temperatura esterna</strong><small>Con le condizioni meteo disponibili.</small></p></div>
                 <div><span>03</span><p><strong>Altitudine e direzione</strong><small>Dati e stato del segnale GPS.</small></p></div>
                 <div><span>04</span><p><strong>Riepilogo della sessione</strong><small>Distanza, durata e velocità media.</small></p></div>
+            </div>
+        </section>
+
+        <section id="dispositivi" class="device-versions section-shell" aria-labelledby="devices-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Due interfacce, gli stessi dati</p>
+                <h2 id="devices-title">NeoGauge su iPhone.<br><span>NeoGauge su iPad.</span></h2>
+                <p>La stessa moto e le stesse informazioni, con un'esperienza adattata allo spazio disponibile su ciascun dispositivo.</p>
+            </div>
+
+            <div class="device-version-grid">
+                <a class="device-version-card iphone-version reveal" href="iphone.html">
+                    <div class="device-version-copy">
+                        <span>iPhone</span>
+                        <h3>La Dashboard e tutto il resto, sempre con te.</h3>
+                        <p>Dati live durante l'uso, rifornimenti, statistiche e diario in un'interfaccia pensata per lo schermo dell'iPhone.</p>
+                        <strong>Scopri la versione iPhone <i aria-hidden="true">→</i></strong>
+                    </div>
+                    <img src="assets/iphone-garage-redacted.jpg" alt="Schermata reale NeoGauge per iPhone con la moto selezionata" loading="lazy">
+                </a>
+
+                <a class="device-version-card ipad-version reveal" href="ipad.html">
+                    <div class="device-version-copy">
+                        <span>iPad</span>
+                        <h3>Più spazio per consultare la storia della moto.</h3>
+                        <p>Box, rifornimenti, chilometri e statistiche sfruttano una vista più ampia, mantenendo la stessa organizzazione dei dati.</p>
+                        <strong>Scopri la versione iPad <i aria-hidden="true">→</i></strong>
+                    </div>
+                    <img src="assets/ipad-garage.jpg" alt="Schermata reale NeoGauge per iPad con menu laterale e moto selezionata" loading="lazy">
+                </a>
             </div>
         </section>
 
