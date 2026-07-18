@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#050807">
-    <meta name="description" content="NeoGauge raccoglie chilometri, rifornimenti, costi, statistiche e ricordi della tua moto, in un unico spazio per iPhone e iPad.">
-    <meta property="og:title" content="NeoGauge — La tua moto, raccontata dai suoi numeri">
-    <meta property="og:description" content="Dati, statistiche e diario della tua moto. Senza mappe, senza navigazione, senza distrazioni.">
+    <meta name="description" content="NeoGauge porta velocità GPS, temperatura esterna, altitudine e dati di guida in una Dashboard digitale, insieme a rifornimenti, statistiche e diario della tua moto.">
+    <meta property="og:title" content="NeoGauge — La strumentazione digitale che mancava alla tua moto">
+    <meta property="og:description" content="Una Dashboard digitale per le informazioni che la strumentazione della tua moto non mostra, senza mappe o navigazione.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="it_IT">
     <meta property="og:image" content="assets/app-icon.png?v=2">
-    <title>NeoGauge — La tua moto, raccontata dai suoi numeri</title>
+    <title>NeoGauge — La strumentazione digitale che mancava alla tua moto</title>
     <link rel="icon" href="assets/app-icon.png?v=2">
     <link rel="apple-touch-icon" href="assets/app-icon.png?v=2">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=3">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -31,6 +31,7 @@
         </button>
 
         <nav id="main-navigation" class="main-navigation" aria-label="Navigazione principale">
+            <a href="#dashboard">Dashboard</a>
             <a href="#funzioni">Funzioni</a>
             <a href="#differenza">Cos'è NeoGauge</a>
             <a href="#privacy">Privacy</a>
@@ -42,12 +43,12 @@
     <main id="contenuto">
         <section id="inizio" class="hero section-shell">
             <div class="hero-copy">
-                <p class="eyebrow">La memoria digitale della tua moto</p>
-                <h1>La tua moto,<br><span>raccontata dai suoi numeri.</span></h1>
-                <p class="hero-intro">NeoGauge riunisce chilometri, rifornimenti, costi, statistiche e ricordi in uno spazio personale, chiaro e costruito per iPhone e iPad.</p>
+                <p class="eyebrow">Una Dashboard digitale per la tua moto</p>
+                <h1>La strumentazione<br><span>che ti mancava.</span></h1>
+                <p class="hero-intro">NeoGauge nasce per affiancare le moto con tachimetro analogico o display LCD essenziale, portando sul tuo iPhone velocità, temperatura esterna, altitudine e informazioni di guida chiare e immediate.</p>
 
                 <div class="hero-actions">
-                    <a class="primary-button" href="#funzioni">Scopri NeoGauge</a>
+                    <a class="primary-button" href="#dashboard">Scopri la Dashboard</a>
                     <span class="store-status" aria-label="Disponibilità prevista su App Store">
                         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16.7 13.1c0-2.7 2.2-4 2.3-4.1a5 5 0 0 0-3.9-2.1c-1.6-.2-3.2 1-4 1-1 0-2.4-1-3.9-1a5.8 5.8 0 0 0-4.8 3c-2 3.5-.5 8.7 1.5 11.5 1 1.4 2.1 3 3.7 2.9 1.5-.1 2.1-1 3.9-1s2.3 1 3.9 1c1.6 0 2.6-1.4 3.5-2.9a12.7 12.7 0 0 0 1.6-3.3 4.9 4.9 0 0 1-3.8-5Zm-2.6-7.9A5 5 0 0 0 15.3 1a5.1 5.1 0 0 0-3.4 1.7 4.7 4.7 0 0 0-1.2 4 4.2 4.2 0 0 0 3.4-1.5Z"/></svg>
                         <span><small>Prossimamente su</small>App Store</span>
@@ -55,56 +56,79 @@
                 </div>
 
                 <div class="hero-points" aria-label="Caratteristiche principali">
-                    <span>Solo i tuoi dati</span>
-                    <span>Italiano e sistema metrico</span>
-                    <span>iPhone e iPad</span>
+                    <span>Dati live leggibili</span>
+                    <span>Nessuna navigazione</span>
+                    <span>Progettata per la guida</span>
                 </div>
             </div>
 
-            <div class="hero-visual" aria-label="Anteprima grafica di NeoGauge">
+            <div class="hero-visual dashboard-hero-visual" aria-label="Anteprima della Dashboard NeoGauge">
                 <div class="ambient-glow"></div>
-                <div class="phone phone-back" aria-hidden="true">
-                    <div class="phone-screen stats-screen">
-                        <div class="mock-status"><span>9:41</span><span>● ●</span></div>
-                        <p class="mock-kicker">STATISTICHE</p>
-                        <h2>La tua stagione</h2>
-                        <div class="chart-bars">
-                            <i style="--bar: 42%"></i><i style="--bar: 64%"></i><i style="--bar: 51%"></i><i style="--bar: 82%"></i><i style="--bar: 70%"></i><i style="--bar: 94%"></i>
+                <div class="dashboard-device" aria-hidden="true">
+                    <div class="dashboard-device-screen">
+                        <div class="dashboard-topline">
+                            <div><i></i><strong>NEOGAUGE</strong><small>KAWASAKI Z650RS</small></div>
+                            <span>● IN REGISTRAZIONE</span>
+                            <time>14:28</time>
                         </div>
-                        <div class="mock-row"><span>Consumo medio</span><strong>19,8 km/l</strong></div>
-                        <div class="mock-row"><span>Spesa carburante</span><strong>€ 486</strong></div>
-                    </div>
-                </div>
 
-                <div class="phone phone-front" aria-hidden="true">
-                    <div class="phone-screen garage-screen">
-                        <div class="mock-status"><span>9:41</span><span>● ●</span></div>
-                        <img class="mock-logo" src="assets/neogauge-logo.png?v=2" alt="">
-                        <p class="mock-kicker">LA TUA MOTO</p>
-                        <h2>Ogni dato.<br>Un solo sguardo.</h2>
-                        <div class="odometer">
-                            <small>CHILOMETRI TOTALI</small>
-                            <strong>24.680</strong><span> km</span>
-                        </div>
-                        <div class="quick-grid">
-                            <div><small>ULTIMO PIENO</small><strong>18,4 l</strong></div>
-                            <div><small>MEDIA</small><strong>19,8 km/l</strong></div>
+                        <div class="dashboard-data-grid">
+                            <div class="dashboard-side-column">
+                                <div class="dashboard-tile cyan"><small>TEMPERATURA ESTERNA</small><strong>19°</strong><span>PARZIALMENTE NUVOLOSO</span></div>
+                                <div class="dashboard-tile mint"><small>ALTITUDINE</small><strong>212 M</strong><span>DATI DA GPS</span></div>
+                                <div class="dashboard-small"><small>TRIP</small><strong>46,8 KM</strong></div>
+                            </div>
+
+                            <div class="dashboard-speed-column">
+                                <div class="dashboard-speed">
+                                    <small>VELOCITÀ GPS</small>
+                                    <strong>78</strong>
+                                    <span>KM/H</span>
+                                    <em>DATI LIVE</em>
+                                </div>
+                                <div class="dashboard-controls"><b>▶ PLAY</b><b>Ⅱ PAUSA</b><b>■ STOP</b></div>
+                                <div class="dashboard-bottom-row"><div><small>DURATA</small><strong>00:42:18</strong></div><div><small>MEDIA</small><strong>66 KM/H</strong></div></div>
+                            </div>
+
+                            <div class="dashboard-side-column">
+                                <div class="dashboard-tile green"><small>BATTERIA TEL.</small><strong>84%</strong><span>ALIMENTAZIONE INTERNA</span></div>
+                                <div class="dashboard-tile green"><small>GPS</small><strong>NE</strong><span>FIX GPS · ±4 M</span></div>
+                                <div class="dashboard-refuel">⛽ RIFORNIMENTO</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <p class="dashboard-preview-caption">Anteprima fedele dell'interfaccia attuale. Le schermate reali dell'app saranno aggiunte prima del lancio.</p>
+            </div>
+        </section>
+
+        <section id="dashboard" class="dashboard-story section-shell" aria-labelledby="dashboard-title">
+            <div class="dashboard-story-copy reveal">
+                <p class="eyebrow">È da qui che nasce NeoGauge</p>
+                <h2 id="dashboard-title">Informazioni moderne.<br><span>Anche su una moto analogica.</span></h2>
+                <p>Molte moto classiche e modern-retro — come la Kawasaki Z650RS da cui è partita l'idea — conservano il fascino del tachimetro a lancetta, ma affidano a un piccolo display LCD soltanto poche informazioni.</p>
+                <p>NeoGauge trasforma l'iPhone in una strumentazione digitale complementare: leggibile in orizzontale, sempre attiva mentre la usi e progettata per mostrare ciò che serve con un solo colpo d'occhio.</p>
+                <p class="dashboard-safety-note">Non sostituisce la strumentazione originale e non è un navigatore.</p>
+            </div>
+
+            <div class="dashboard-facts reveal" aria-label="Informazioni mostrate dalla Dashboard">
+                <div><span>01</span><p><strong>Velocità GPS</strong><small>Grande, digitale e immediata.</small></p></div>
+                <div><span>02</span><p><strong>Temperatura esterna</strong><small>Con le condizioni meteo disponibili.</small></p></div>
+                <div><span>03</span><p><strong>Altitudine e direzione</strong><small>Dati e stato del segnale GPS.</small></p></div>
+                <div><span>04</span><p><strong>Riepilogo della sessione</strong><small>Distanza, durata e velocità media.</small></p></div>
             </div>
         </section>
 
         <section class="statement section-shell" aria-labelledby="statement-title">
-            <p class="eyebrow">Conosci la moto che guidi</p>
-            <h2 id="statement-title">Meno supposizioni.<br><span>Più consapevolezza.</span></h2>
-            <p>NeoGauge trasforma le informazioni che inserisci e i riepiloghi delle tue sessioni in una storia chiara della moto: quanto la usi, quanto consuma e quali ricordi vuoi conservare.</p>
+            <p class="eyebrow">Dalla Dashboard, tutto il resto</p>
+            <h2 id="statement-title">Prima i dati in movimento.<br><span>Poi la storia della moto.</span></h2>
+            <p>Dalla necessità di leggere meglio le informazioni durante l'uso sono nate le altre funzioni: rifornimenti, statistiche, riepiloghi e un piccolo diario personale.</p>
         </section>
 
         <section id="funzioni" class="features section-shell" aria-labelledby="features-title">
             <div class="section-heading">
-                <p class="eyebrow">Tutto ciò che conta</p>
-                <h2 id="features-title">I dati della moto,<br>finalmente leggibili.</h2>
+                <p class="eyebrow">L'ecosistema cresciuto intorno alla Dashboard</p>
+                <h2 id="features-title">I dati non finiscono<br>quando spegni la moto.</h2>
             </div>
 
             <div class="feature-grid">
