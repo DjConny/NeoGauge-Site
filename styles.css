@@ -29,6 +29,8 @@ body {
 }
 
 a { color: inherit; }
+sup { font-size: .55em; line-height: 0; }
+sup a { color: var(--accent); text-decoration: none; }
 img { display: block; max-width: 100%; }
 button { font: inherit; }
 .sr-only {
@@ -321,6 +323,64 @@ h1 span, h2 span { color: var(--accent); }
 .device-version-copy i { font-style: normal; }
 .device-version-card > img { align-self: end; width: 100%; height: 330px; object-fit: contain; object-position: center bottom; filter: drop-shadow(0 25px 40px rgba(0,0,0,.55)); }
 
+.purchase-overview { padding-block: 135px 150px; border-top: 1px solid var(--line); }
+.purchase-overview .section-heading > p:last-child { max-width: 760px; color: var(--muted); font-size: 19px; }
+.purchase-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+.purchase-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 530px;
+    padding: 32px;
+    background: rgba(255,255,255,.035);
+    border: 1px solid var(--line);
+    border-radius: 28px;
+}
+.purchase-card-featured { background: radial-gradient(circle at 80% 8%, rgba(0,242,148,.17), transparent 42%), rgba(255,255,255,.055); border-color: rgba(0,242,148,.42); box-shadow: 0 26px 70px rgba(0,0,0,.26); }
+.purchase-kicker { color: var(--accent); font-size: 11px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+.purchase-card h3 { margin: 18px 0 22px; font-size: clamp(31px, 3.4vw, 43px); }
+.purchase-price { margin: 0 0 26px; color: var(--text); font-size: 34px; font-weight: 850; letter-spacing: -.045em; }
+.purchase-price small { color: var(--muted); font-size: 14px; font-weight: 700; letter-spacing: 0; }
+.purchase-card ul, .purchase-detail ul { display: grid; gap: 13px; padding: 0; margin: 0 0 25px; list-style: none; }
+.purchase-card li, .purchase-detail li { position: relative; padding-left: 24px; color: #dbe3df; }
+.purchase-card li::before, .purchase-detail li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 850; }
+.purchase-card > small { margin-top: auto; color: var(--muted); }
+.purchase-footnote { margin: 24px 0 0; color: var(--muted); font-size: 13px; text-align: center; }
+.purchase-footnote a, .inline-link { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(0,242,148,.28); }
+
+.purchase-page { overflow: hidden; }
+.purchase-page-hero { padding-block: 115px 95px; text-align: center; }
+.purchase-page-hero h1 { max-width: 1000px; margin-inline: auto; font-size: clamp(58px, 8.5vw, 108px); }
+.purchase-page-hero .hero-intro { margin-inline: auto; }
+.purchase-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; padding-bottom: 140px; }
+.purchase-detail {
+    display: grid;
+    gap: 35px;
+    padding: 45px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid var(--line);
+    border-radius: 32px;
+}
+.purchase-detail-plus { background: radial-gradient(circle at 82% 8%, rgba(0,242,148,.18), transparent 42%), rgba(255,255,255,.05); border-color: rgba(0,242,148,.36); }
+.purchase-detail h2 { margin-bottom: 22px; font-size: clamp(42px, 5.3vw, 66px); }
+.purchase-detail > div > p:last-child { color: var(--muted); }
+.purchase-detail-price { margin: 0 0 24px; color: var(--accent); font-size: 38px; font-weight: 850; letter-spacing: -.045em; }
+.purchase-detail-price small { color: var(--muted); font-size: 15px; letter-spacing: 0; }
+.purchase-clarification { align-self: end; margin: 0; padding: 18px; color: #cfd8d3; background: rgba(255,255,255,.045); border-radius: 16px; font-size: 13px; }
+.free-included { display: grid; grid-template-columns: .9fr 1.1fr; gap: 75px; align-items: center; padding-block: 130px; border-top: 1px solid var(--line); }
+.free-included h2 { font-size: clamp(44px, 6vw, 75px); }
+.free-included-list { overflow: hidden; border: 1px solid var(--line); border-radius: 28px; }
+.free-included-list p { display: flex; gap: 18px; align-items: center; min-height: 86px; padding: 20px 24px; margin: 0; background: rgba(255,255,255,.035); border-bottom: 1px solid var(--line); }
+.free-included-list p:last-child { border-bottom: 0; }
+.free-included-list span { color: var(--accent); font-size: 11px; font-weight: 850; letter-spacing: .1em; }
+.purchase-terms { padding-block: 125px 145px; border-top: 1px solid var(--line); }
+.terms-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.terms-grid article { padding: 28px; background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 22px; }
+.terms-grid h3 { margin-bottom: 12px; font-size: 25px; letter-spacing: -.035em; }
+.terms-grid p { margin: 0; color: var(--muted); font-size: 15px; }
+.legal-links { display: flex; flex-wrap: wrap; gap: 22px; margin: 28px 0 0; }
+.legal-links a { color: var(--accent); font-size: 13px; font-weight: 780; text-decoration: none; border-bottom: 1px solid rgba(0,242,148,.3); }
+
 .product-main { overflow: hidden; }
 .product-hero { padding-block: 105px 85px; text-align: center; }
 .product-hero h1 { max-width: 1050px; margin-inline: auto; font-size: clamp(54px, 8vw, 104px); }
@@ -483,6 +543,9 @@ h1 span, h2 span { color: var(--accent); }
     .site-footer > p:nth-child(2) { text-align: right; }
     .product-highlights, .iphone-gallery { grid-template-columns: 1fr 1fr; }
     .iphone-gallery figure, .iphone-gallery figure:nth-last-child(-n+2) { grid-column: auto; }
+    .purchase-card-grid { grid-template-columns: 1fr 1fr; }
+    .purchase-card-featured { grid-column: 1 / -1; }
+    .free-included { grid-template-columns: 1fr; gap: 45px; }
 }
 
 @media (max-width: 680px) {
@@ -517,6 +580,16 @@ h1 span, h2 span { color: var(--accent); }
     .device-versions { padding-block: 95px 110px; }
     .device-version-card { grid-template-rows: auto 280px; min-height: 610px; padding: 28px 25px 0; }
     .device-version-card > img { height: 275px; }
+    .purchase-overview { padding-block: 90px 105px; }
+    .purchase-card-grid, .purchase-detail-grid, .terms-grid { grid-template-columns: 1fr; }
+    .purchase-card-featured { grid-column: auto; }
+    .purchase-card { min-height: auto; padding: 27px; }
+    .purchase-page-hero { padding-block: 80px 65px; }
+    .purchase-page-hero h1 { font-size: clamp(48px, 14vw, 70px); }
+    .purchase-detail-grid { padding-bottom: 100px; }
+    .purchase-detail { padding: 29px 25px; }
+    .free-included { padding-block: 95px; }
+    .purchase-terms { padding-block: 90px 110px; }
     .features { padding-block: 80px 110px; }
     .feature-grid { grid-template-columns: 1fr; }
     .feature-card, .feature-card-wide { grid-column: auto; display: block; min-height: 440px; padding: 26px; }
