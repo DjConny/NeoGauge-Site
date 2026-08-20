@@ -1,3 +1,4 @@
+/opt/homebrew/Library/Homebrew/cmd/shellenv.sh: line 18: /bin/ps: Operation not permitted
 :root {
     --bg: #050807;
     --bg-soft: #0a0f0d;
@@ -97,6 +98,9 @@ button { font: inherit; }
 }
 .main-navigation a:hover,
 .main-navigation a:focus-visible { color: var(--accent); }
+.language-switcher { display: inline-flex; align-items: center; gap: 7px; margin-left: 4px; padding-left: 14px; border-left: 1px solid var(--line); }
+.language-switcher a { color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-decoration: none; }
+.language-switcher a.is-active, .language-switcher a:hover, .language-switcher a:focus-visible { color: var(--accent); }
 .menu-button { display: none; }
 
 .hero {
@@ -563,6 +567,7 @@ h1 span, h2 span { color: var(--accent); }
     .main-navigation { position: absolute; top: 67px; right: 0; left: 0; display: none; align-items: stretch; padding: 15px; background: #0a0f0d; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 24px 70px #000; }
     .main-navigation.is-open { display: grid; }
     .main-navigation a { padding: 11px 8px; }
+    .language-switcher { justify-content: center; margin: 8px 0 0; padding: 13px 0 3px; border-top: 1px solid var(--line); border-left: 0; }
     .hero { min-height: auto; padding-block: 75px 50px; }
     h1 { font-size: clamp(48px, 13vw, 64px); }
     .hero-actions { align-items: stretch; flex-direction: column; }
