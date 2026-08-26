@@ -55,8 +55,6 @@ Il file pubblico `app-update.json` è disponibile all'indirizzo:
 `https://djconny.github.io/NeoGauge-Site/app-update.json`
 
 `latestVersion` indica l'ultima versione realmente pubblicata sull'App Store.
-Prima della pubblicazione di una nuova versione, lasciare `latestVersion` alla
-versione già pubblica e mantenere `available` a `false` nella relativa scheda.
-Dopo la pubblicazione, impostare `latestVersion` sulla nuova versione e
-`available` a `true`, quindi eseguire il commit e il push: GitHub Actions
-aggiornerà automaticamente la GitHub Page.
+La scheda della release diventa disponibile impostando `available` a `true`.
+Dopo ogni pubblicazione, aggiornare questi valori, quindi eseguire il commit e
+il push: GitHub Actions aggiornerà automaticamente la GitHub Page.

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "latestVersion": "1.2.0",
+  "latestVersion": "1.2.1",
   "minimumSupportedVersion": "1.0",
   "storeURL": "https://apps.apple.com/app/id6789933831",
   "releases": {
     "1.2.1": {
-      "available": false,
+      "available": true,
       "notes": {
         "it": "Migliorie ai Giri: aggiungi foto dalla fotocamera o dalla libreria, associa percorsi già registrati e condividi schede più complete.\n\n• Inserimento dei rifornimenti rinnovato su iPhone e iPad.\n• Controlli e messaggi di importazione più chiari e localizzati.\n• Blocco privacy più affidabile.\n• Migliorate le traduzioni del widget e delle funzioni di calibrazione.",
         "en": "Journey improvements: add photos from the camera or library, add existing rides to a journey, and share clearer ride summaries.\n\n• Redesigned refueling entry on iPhone and iPad.\n• Clearer, localized import messages and input feedback.\n• More reliable privacy lock behavior.\n• Improved translations for the widget and calibration features.",
