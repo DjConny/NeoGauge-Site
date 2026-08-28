@@ -7,9 +7,9 @@
     "1.2.1": {
       "available": true,
       "notes": {
-        "it": "Migliorie ai Giri: aggiungi foto dalla fotocamera o dalla libreria, associa percorsi già registrati e condividi schede più complete.\n\n• Inserimento dei rifornimenti rinnovato su iPhone e iPad.\n• Controlli e messaggi di importazione più chiari e localizzati.\n• Blocco privacy più affidabile.\n• Migliorate le traduzioni del widget e delle funzioni di calibrazione.",
-        "en": "Journey improvements: add photos from the camera or library, add existing rides to a journey, and share clearer ride summaries.\n\n• Redesigned refueling entry on iPhone and iPad.\n• Clearer, localized import messages and input feedback.\n• More reliable privacy lock behavior.\n• Improved translations for the widget and calibration features.",
-        "es": "Mejoras en los recorridos: añade fotos desde la cámara o la biblioteca, incorpora trayectos existentes y comparte resúmenes más claros.\n\n• Registro de repostajes renovado en iPhone y iPad.\n• Mensajes de importación y avisos de entrada más claros y localizados.\n• Mayor fiabilidad del bloqueo de privacidad.\n• Mejores traducciones para el widget y las funciones de calibración."
+        "it": "• Localizzazione completa in italiano, inglese e spagnolo.\n• Nuovo widget per inserire rapidamente un rifornimento.\n• Controlli più affidabili sui chilometri e sui dati dei rifornimenti.\n• Miglioramenti a Garage, Rifornimenti, Statistiche e gestione dei giri storici.",
+        "en": "• Full localization in Italian, English, and Spanish.\n• New widget for quickly adding a refueling.\n• More reliable mileage and refueling data checks.\n• Improvements to Garage, Refuelings, Statistics, and trip history management.",
+        "es": "• Localización completa en italiano, inglés y español.\n• Nuevo widget para añadir rápidamente un repostaje.\n• Controles más fiables del kilometraje y los datos de repostaje.\n• Mejoras en Garaje, Repostajes, Estadísticas y gestión del historial de rutas."
       }
     }
   }
